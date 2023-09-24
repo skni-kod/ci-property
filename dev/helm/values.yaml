@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: nexus.skni.edu.pl:1180/steel-dart-backend
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
@@ -16,6 +16,9 @@ imageCredentials:
   username: ""
   password: ""
   email: ""
+
+envFileName: "envfile"
+
 nameOverride: ""
 fullnameOverride: ""
 
