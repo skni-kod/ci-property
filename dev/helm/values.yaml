@@ -17,8 +17,6 @@ imageCredentials:
   password: ""
   email: ""
 
-envFileName: "envfile"
-
 nameOverride: ""
 fullnameOverride: ""
 
