@@ -11,6 +11,11 @@ image:
   tag: "latest"
 
 imagePullSecrets: [{name: "nexus"}]
+imageCredentials:
+  registry: nexus.skni.edu.pl:1180
+  username: ""
+  password: ""
+  email: ""
 nameOverride: ""
 fullnameOverride: ""
 
