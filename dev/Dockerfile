@@ -30,9 +30,7 @@ ENV APP_ENV production
 RUN composer install
 
 RUN chown -R www-data:www-data /var/www/html/ && \
-    chown -R www-data:www-data /var/www/html/bootstrap/cache && \
-    chmod -R 755 /var/www/html/storage && \
-    chmod -R 755 /var/www/html/bootstrap/cache
+    chmod -R 755 /var/www/html/storage
 
 CMD php artisan config:clear && \
     php artisan config:cache && \
